@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🚗 Sistema de Autodiagnóstico de Veículos e Gestão de Processos
 
-Currently, two official plugins are available:
+Este projeto **Frontend** desenvolvido em **React.js** tem como objetivo fornecer uma interface intuitiva para o **autodiagnóstico de veículos** e a **gestão dos processos** derivados desses diagnósticos. O sistema permite que mecânicos e proprietários de veículos acompanhem e gerenciem facilmente os diagnósticos em tempo real.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Funcionalidades
 
-## Expanding the ESLint configuration
+- **Visualização em tempo real** dos diagnósticos do veículo.
+- **Gestão de processos** gerados a partir dos diagnósticos.
+- Interface **intuitiva e amigável** para o usuário.
+- **Design responsivo**, otimizado para dispositivos móveis e desktops.
+- Pronto para **integração com APIs** de backend.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- **Framework**: React.js
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Como Executar o Projeto
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/gustavoaraujo06/ChallengeSprint3.git
+   cd ChallengeSprint3
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+4. Acesse o sistema no navegador:
+   ```bash
+   http://localhost:5173
+   ```
+
