@@ -1,0 +1,59 @@
+#about{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 300px);
+    gap: 30px;
+    padding: 30px;
+}
+#aboutContent{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+@media (max-width: 1000px){
+    #aboutContent{
+        grid-template-columns: auto;
+        gap: 40px;
+    }
+    
+}
+.memberCardContainer {
+    perspective: 1000px;
+    width: 300px;
+    height: 200px;
+}
+
+.memberCard {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s; 
+}
+
+.memberCardContainer:hover .memberCard {
+    transform: rotateY(180deg); /* Gira o cartão 180 graus no eixo Y */
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Esconde o lado oposto quando está de frente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: black;
+    color: white;
+    color: #00a1fc;
+    box-shadow: 0px 0px 35px 8px rgba(0,161,252,1);
+}
