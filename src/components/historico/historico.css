@@ -1,0 +1,28 @@
+#historico{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 300px);
+    gap: 20px;
+    padding: 40px;
+}
+.processo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00a1fc;
+    width: 100%;
+}
+.processo:hover{
+    transform: scale(1.025);
+    transition: 0.35s;
+}
+.processoField{
+    width: 100%;
+}
+    
+    
